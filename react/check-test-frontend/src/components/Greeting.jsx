@@ -11,7 +11,7 @@ const Greeting = ({ name, setMyName }) => {
   };
   return (
     <div className="component-container">
-      <h1>hello {name} !</h1>
+      <h1>hello {name !== "" && name} !</h1>
 
       <input
         type="text"
