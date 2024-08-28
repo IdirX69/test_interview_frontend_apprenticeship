@@ -1,4 +1,5 @@
 import "./App.css";
+import Counter from "./components/Counter";
 import Greeting from "./components/Greeting";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <Greeting name={myName} />
+      <Counter />
     </>
   );
 }
