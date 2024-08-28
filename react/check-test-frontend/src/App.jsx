@@ -1,13 +1,15 @@
+import { useState } from "react";
 import "./App.css";
 import Counter from "./components/Counter";
 import Greeting from "./components/Greeting";
 import NamesList from "./components/NamesList ";
 
 function App() {
-  let myName = "Check";
+  const [myName, setMyName] = useState("Check");
+
   return (
     <>
-      <Greeting name={myName} />
+      <Greeting name={myName} setMyName={setMyName} />
       <Counter />
       <NamesList />
     </>
